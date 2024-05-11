@@ -10,7 +10,6 @@
 #define MOUSE   3
 #define SYSTEM  4
 #define BT      5
-#define SCROLL  6
 
 / {
 
@@ -49,8 +48,6 @@
             >;
             trackball-bindings = <&tsl_fine>;
         };
-
-&kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP
 
         Mouse {
             bindings = <
