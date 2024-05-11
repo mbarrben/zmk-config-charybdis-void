@@ -62,10 +62,10 @@
 
         System {
             bindings = <
-   &none  &sys_reset &bootloader  &kp PG_UP  &trans   &trans      &kp C_VOL_UP  &trans    &kp UP    &sys_reset  &bootloader  &none
-   &none  &trans     &kp HOME     &kp PG_DN  &kp END  &trans      &kp C_VOL_DN  &kp LEFT  &kp DOWN  &kp RIGHT   &trans       &none
-   &none  &trans     &trans       &trans     &trans   &trans      &kp C_MUTE  &trans    &trans    &trans        &trans       &none
-                                  &trans     &trans   &trans      &trans  &trans
+   &none  &reset  &bootloader  &kp PG_UP  &trans   &trans      &kp C_VOL_UP  &trans    &kp UP    &reset      &bootloader  &none
+   &none  &trans  &kp HOME     &kp PG_DN  &kp END  &trans      &kp C_VOL_DN  &kp LEFT  &kp DOWN  &kp RIGHT   &trans       &none
+   &none  &trans  &trans       &trans     &trans   &trans      &kp C_MUTE  &trans    &trans    &trans        &trans       &none
+                               &trans     &trans   &trans      &trans  &trans
             >;
             trackball-bindings = <&tmv_fine>;
         };
