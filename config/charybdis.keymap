@@ -22,7 +22,7 @@
     &none  &kp Q         &kp W        &kp E       &kp R          &kp T                 &kp Y      &kp U       &kp I       &kp O        &kp P           &none
     &none  &mt LSHIFT A  &mt LCTRL S  &mt LALT D  &mt LGUI F     &kp G                 &kp H      &mt RGUI J  &mt RALT K  &mt RCTRL L  &mt RSHFT SEMI  &none
     &none  &kp Z         &kp X        &kp C       &kp V          &kp B                 &kp N      &kp M       &kp COMMA   &kp DOT      &kp FSLH        &none
-                                      &lt BT ESC  &lt LOWER TAB  &lt SCROLL ENTER      &lt SYSTEM SPACE       &lt RAISE BSPC
+                                      &lt BT ESC  &lt LOWER TAB  &kp ENTER             &lt SYSTEM SPACE       &lt RAISE BSPC
             >;
             trackball-bindings = <&tmv_coarse>;
         };
