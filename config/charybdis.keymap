@@ -10,6 +10,7 @@
 #define MOUSE   3
 #define SYSTEM  4
 #define BT      5
+#define SCROLL  6
 
 / {
 
@@ -49,6 +50,8 @@
             trackball-bindings = <&tsl_fine>;
         };
 
+&kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP
+
         Mouse {
             bindings = <
    &none  &trans  &trans  &trans     &trans     &trans      &trans  &trans  &trans  &trans  &trans  &none
@@ -62,9 +65,9 @@
 
         System {
             bindings = <
-   &none  &sys_reset &bootloader  &kp PG_UP  &trans   &trans      &trans  &trans    &kp UP    &trans     &trans  &none
-   &none  &trans     &kp HOME     &kp PG_DN  &kp END  &trans      &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &none
-   &none  &trans     &trans       &trans     &trans   &trans      &trans  &trans    &trans    &trans     &trans  &none
+   &none  &sys_reset &bootloader  &kp PG_UP  &trans   &trans      &kp C_VOL_UP  &trans    &kp UP    &sys_reset  &bootloader  &none
+   &none  &trans     &kp HOME     &kp PG_DN  &kp END  &trans      &kp C_VOL_DN  &kp LEFT  &kp DOWN  &kp RIGHT   &trans       &none
+   &none  &trans     &trans       &trans     &trans   &trans      &kp C_MUTE  &trans    &trans    &trans        &trans       &none
                                   &trans     &trans   &trans      &trans  &trans
             >;
             trackball-bindings = <&tmv_fine>;
